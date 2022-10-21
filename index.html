@@ -11,6 +11,50 @@
 </head>
 
   <body>
+    <div class="main-wrapper d-flex flex-column">
+
+      <!-- HEADER START -->
+      <header class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <div class="logo d-flex align-items-center py-3">
+              <img src="img/boomimage.jpg" alt="">
+              <h1 class="">Campo Minato</h1>
+            </div>
+          </div>
+          <div class="col d-flex align-items-center py-3">
+            <label class="fs-4 text" for="level">Difficoltà: </label>
+            <select class="form-select mx-3" id="level" name="level">
+              <option value="0">Easy</option>
+              <option value="1">Hard</option>
+              <option value="2">Crazy</option>
+            </select>
+            <button type="button" class="btn btn-light"" id="play">Gioca</button>      
+          </div> 
+        </div>   
+      </header>
+      <!-- HEADER END -->
+  
+      <!-- MAIN START -->
+      <main class="d-flex justify-content-center align-items-center flex-column">
+        
+        <div class="game-wrapper rounded text-light">
+          <h2 class="text p-2">Seleziona un livello di difficoltà e comincia a giocare</h2>
+          <!-- <div class="grid">
+              <div class="cell square81"><span>x</span></div>
+          </div> -->
+          <!-- <div class="end-game-level"></div> -->
+        </div>
+  
+        <h3 class="endMessage py-3"></h3>
+  
+      </main>
+      <!-- MAIN END -->
+
+    </div>
+    
+    <!-- FOOTER -->
+    <footer class="container-fluid py-3">Made with &hearts; by Jessica</footer> 
 
     <script src="js/script.js"></script>
   </body>

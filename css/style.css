@@ -3,3 +3,82 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.main-wrapper{
+  height: 100vh;
+  width: 100%;
+}
+
+header, footer{
+  background-color: #FF9914;
+  color: white;
+}
+
+header{
+  height: 10vh;
+  margin-bottom: 20px;
+}
+
+header img{
+  max-width: 100px;
+  padding: 10px;
+}
+
+.game-wrapper{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin: 50px;
+  padding: 0;
+  background-color:#08BDBD;
+}
+
+.grid{
+  width: 500px;
+  height: 500px;
+}
+
+.cell{
+  display: flex;
+  float: left;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.square100{
+  width: calc(100% / 10);
+  height: calc(100% / 10);
+}
+
+.square81{
+  width: calc(100% / 9);
+  height: calc(100% / 9);
+}
+
+.square49{
+  width: calc(100% / 7);
+  height: calc(100% / 7);
+}
+
+.clicked {
+  background-color:  #ABFF4F;
+  color: black;
+}
+
+.bomb{
+  background-color: #F21B3F;
+}
+
+.end-game-level{
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+}
+
