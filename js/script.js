@@ -59,7 +59,7 @@ function cellGenerator(cellId, cellNumbers){
   //custom propriety for cells
   cell.cellId = cellId;
   cell.innerHTML = `<span>${cellId}</span>`;
-  cell.addEventListener("click", handleClickCell);
+  cell.addEventListener("click", handleClickCell, {once: true});
   return cell;
 };
 
